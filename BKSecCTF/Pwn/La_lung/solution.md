@@ -10,6 +10,9 @@ Note: **srand(time(0))** and **Stack Alignment**
 ```
 
 #!/usr/bin/python3
+
+##By shibajutsu and Gnas
+
 import math
 from ctypes import CDLL
 from pwn import *
