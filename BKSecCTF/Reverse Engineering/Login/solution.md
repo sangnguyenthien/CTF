@@ -174,6 +174,7 @@ enc_password = [ord(c) for  c  in  enc_password]
 password = [0  for  _  in  range(len(enc_password))]
 #print(enc_password)
 
+# You can use Z3 Solver to solve ^.^
 for i in range(10):
 	#test for pass[i]
 	for  test  in  range(32, 128):
