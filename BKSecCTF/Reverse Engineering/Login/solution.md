@@ -147,7 +147,7 @@ Here is the flow
 > correct password ----------> hashp() ----------> enc_password = "SPIDER=..."
 
 To retrieve correct_username and correct_password we need to write the inverse function of hashu() and hashp()
-```
+```python
 enc_username = "0915987514_$$010750_so$dt@$ksec_Spid3$_HUST-ph1she$_team_Chu$g_t0i_l@_H@cK3$"
 
 enc_password = "SPIDER=human, !robot"
@@ -189,7 +189,7 @@ print(str_password.encode())
 ########
 ```
 After get the correct username and correct password, let's try
-```
+```python
 from  pwn  import *
 
   
