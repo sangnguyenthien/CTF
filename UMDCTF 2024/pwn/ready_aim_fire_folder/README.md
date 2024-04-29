@@ -77,6 +77,11 @@ Mục đích là để giữ nguyên các các giá trị "nhạy cảm" trên c
 
 ![image](https://github.com/sangnguyenthien/CTF/assets/89742084/d6711859-6097-4fbf-bd8f-59f3d3550aa8)
 
+Dưới đây là chia sẻ của tác giả ^^:
+
+![image](https://github.com/sangnguyenthien/CTF/assets/89742084/fe0ce23d-7ed5-497c-a155-e53ad03b8679)
+
+
 
  Code giải:
 
