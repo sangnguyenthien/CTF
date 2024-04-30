@@ -6,13 +6,13 @@
 ## Source 
 > mentat_question
 
-> mentat_question.cpp
+> mentat_question.c
 
 > Dockerfile
 
 ## Solution
 
-Đầu tiên hãy xem thử source code C++:
+Đầu tiên hãy xem thử source code C:
 
 ![image](https://github.com/sangnguyenthien/CTF/assets/89742084/3074f806-29c2-4987-8bb9-9a1a5cadf5f1)
 
