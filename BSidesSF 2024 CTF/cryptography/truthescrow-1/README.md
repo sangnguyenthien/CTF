@@ -15,7 +15,9 @@
 -------------------
 We have:
 -> least significant 512 bits of q: KNOWN
+
 -> most significant 512 bits of p: KNOWN
+
 -> N: KNOWN
 
 Then, we can leak the least significant 512 bits of p -> Most significant 512 bits of p and Least significant 512 bits of p -> p
