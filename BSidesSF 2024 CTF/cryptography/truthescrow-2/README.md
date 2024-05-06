@@ -1,6 +1,10 @@
+# Challenge: truthescrow-2
+
+## Description
 
 ![image](https://github.com/sangnguyenthien/CTF/assets/89742084/2600f3dd-4fe7-433f-a478-ea3d82316a7d)
 
+## Solution
 
 Like truthescrow-1, our task is calculate **d** from the leaked lower half bits of the private key **d** to create valid signature -> Read the truth from Citizen 1 (Nadia Heninger Hovav Shacham).
 
