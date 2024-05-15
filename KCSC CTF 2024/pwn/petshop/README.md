@@ -92,7 +92,7 @@ Việc còn lại là viết rop chain để leak GOT -> leak libc, nhảy về 
 
 Code giải: **solve.py**
 
-Note: Rop chain mình viết có hơi ngáo một chút ở chỗ nhảy về main :)). Bạn có thể thay thế bằng cách thêm ngay địa chỉ hàm main vào ngay sau puts plt (leak GOT) để sau khi leak được địa chỉ libc thì chúng ta lại quay về hàm main.
+Note: Rop chain mình viết có hơi ngáo một chút ở chỗ nhảy về main :)). Bạn có thể thay thế bằng cách thêm  địa chỉ hàm main vào ngay sau puts plt (leak GOT) để sau khi leak được địa chỉ libc thì chúng ta lại quay về hàm main.
 
 
 ![image](https://github.com/sangnguyenthien/CTF/assets/89742084/efe95a2b-8237-4e92-928a-9c77d51ab506)
