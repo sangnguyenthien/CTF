@@ -91,4 +91,5 @@ OK vậy là vượt qua được If, nhưng mà làm sao để sử dụng đư
 Việc còn lại là viết rop chain để leak GOT -> leak libc, nhảy về hàm main. Sau đó lại tận dụng buffer overflow này để ret2libc.
 
 Code giải: **solve.py**
+
 Note: Rop chain mình viết có hơi ngáo một chút ở chỗ nhảy về main :)). Bạn có thể thay thế bằng cách thêm ngay địa chỉ hàm main vào ngay sau puts plt (leak GOT) để sau khi leak được địa chỉ libc thì chúng ta lại quay về hàm main.
